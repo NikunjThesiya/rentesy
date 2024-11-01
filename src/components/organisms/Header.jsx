@@ -19,7 +19,9 @@ const Header = ({ setIsSidebarOpen }) => {
 						className="size-8 object-contain"
 					/>
 				</Link>
-				<BarIcon className="size-4 object-contain md:hidden block cursor-pointer" />
+				<button onClick={() => setIsSidebarOpen(true)}>
+					<BarIcon className="size-6 object-contain md:hidden block cursor-pointer" />
+				</button>
 				<div className="md:block hidden">
 					<SearchInput />
 				</div>
